@@ -1,0 +1,21 @@
+<head>
+  <title>demo-gps</title>
+</head>
+
+<body>
+  <h1>Simple GPS app</h1>
+
+  {{> main}}
+  {{> gpsStatus}}
+</body>
+
+<template name="main">
+  <button id="start">Start GPS</button>
+  <button id="stop">Stop GPS</button>
+</template>
+
+<template name="gpsStatus">
+  <h1> GPS is currently: {{getGpsState}}.</h1>
+ 
+</template>
+
